@@ -1,0 +1,21 @@
+[project]
+name = "estudo-discente-django"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Franz Trefzger Neto", email = "gemeostrefzger@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "django>=5.2.18",
+    "django-jazzmin==3.0.1",
+    "pillow>=12.3.0",
+]
+
+[project.scripts]
+estudo-discente-django = "estudo_discente_django:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
