@@ -267,3 +267,6 @@ JAZZMIN_SETTINGS = {
     # Add a language dropdown into the admin
     "language_chooser": False,
 }
+LOGIN_URL = "accounts:login"
+LOGIN_REDIRECT_URL = "construmax:course_list"
+LOGOUT_REDIRECT_URL = "accounts:login"

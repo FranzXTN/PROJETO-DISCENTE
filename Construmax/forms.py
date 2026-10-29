@@ -1,5 +1,5 @@
 from django import forms
-from courses.models import Course  # troque courses pelo nome do seu app
+from Construmax.models import Course # troque courses pelo nome do seu app
 
 
 class CourseForm(forms.ModelForm):

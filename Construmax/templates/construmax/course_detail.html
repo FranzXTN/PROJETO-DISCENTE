@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% extends "base.html" %}
+{% extends "base.html" %}
 
 {% block title %}Curso{% endblock %}
 
@@ -22,8 +14,5 @@
     {% if course.material %}
         <a href="{{ course.material.url }}" class="btn btn-outline-primary" target="_blank">Baixar material</a>
     {% endif %}
-    {# troque courses pelo nome do seu app #}
-    <a href="{% url 'courses:course_list' %}" class="btn btn-secondary">Voltar</a>
+    <a href="{% url 'construmax:course_list' %}" class="btn btn-secondary">Voltar</a>
 {% endblock %}
-</body>
-</html>
